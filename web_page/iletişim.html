@@ -1,0 +1,107 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>İletişim</title>
+    <link href="odev.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        #form{
+            width: 600px;
+            border:10px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #maps{
+           margin-left:300px;
+        }
+
+        #icerik2{
+            margin-left:40px;
+            margin-top:40px;
+            margin-bottom:50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="sayfa">
+
+        <div class="baslik">
+            <img src="logo.png" width="250" height="70" alt="Web Sitesi Logosu" />
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><b><a href="odev.html">Anasayfa</a></b></li>
+                <li><b><a href="galeri.html">Galeri</a></b></li>
+                <li><b><a href="iletişim.html">İletişim</a></b></li>
+                <li style="float:right"><b><a href="hakkında.html">Hakkında</a></b></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="breadcrumb">
+                <li><a href="odev.html">Anasayfa</a></li>
+                <li style="color:white">İletişim</li>
+            </ul>
+        </div>
+
+        <div class="icerik" id="icerik2">
+            <div class="sol sutun">
+                <p style="font-size: 13px;"><b>Aşağıdaki formu doldurarak ulaşabilirsiniz.</b></p><br />
+
+                <div id="form">
+                    <form>
+                        <table width="500px" height="300px">
+                            <tr>
+                                <td>Ad Soyad:</td>
+                                <td><input type="text" name="isim"</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td><input type="text" name="email"</td>
+                            </tr>
+                            <tr>
+                                <td>Telefon:</td>
+                                <td><input type="text" name="telefon"</td>
+                            </tr>
+                            <tr>
+                                <td>Konu:</td>
+                                <td><input type="text" name="konu"</td>
+                            </tr>
+                            <tr>
+                                <td>Mesajınız:</td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><button onmouseover>Gönder</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="sag sutun" id="maps">
+                <p align="middle"><b>Harita</b></p><br />
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1Hvj-58OEiXH43FeB1JLaQnhaHHsSHfQG" width="330" height="200"></iframe><br />
+                <br />
+                <p align="middle"><b>İletişim Bilgileri</b></p>
+                <p>Kemalpaşa Esentepe Kampüsü, Üniversite Cd., 54050 Serdivan/Sakarya</p>
+                <p>Telefon: (0264) 295 54 54</p>
+                <p> Fax: +90 (264) 295 50 32</p>
+                <p> E-mail: esra.aksu2@ogr.sakarya.edu.tr</p><br /><br />
+
+            </div>
+        </div>
+        <div class="alt" align="center">
+            <div style="float:left"><b><i>Bilişim Sistemleri Mühendisliği</i></b></div>
+            <div style="float:right"><b>Esra Aksu | B191200370</b></div>
+
+        </div>
+</body>
+</html>

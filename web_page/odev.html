@@ -1,0 +1,94 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esra Aksu</title>
+    <link href="odev.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <div class="sayfa">
+
+        <div class="baslik">
+          <img src="logo.png" width="250" height="70" alt="Web Sitesi Logosu" />
+          
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><b><a href="odev.html">Anasayfa</a></b></li>
+                <li><b><a href="galeri.html">Galeri</a></b></li>
+                <li><b><a href="iletişim.html">İletişim</a></b></li>
+                <li style="float:right"><b><a href="hakkında.html">Hakkında</a></b></li>
+
+            </ul>
+        </div>
+
+        <div class="icerik">
+            <h1 align="center"> Geleneklerine Bağlı Bir Ülke: Japonya </h1>
+            <div class="sol sutun">
+                <p>Japon ulusunun izole yeri Ulusal karakterine ve geleneksel yaşam tarzına yansır. Japonların uzun ömürlülüğü, ülkedeki düşük düzeyde şiddet, nüfusun etnik bileşiminin homojenliği - bunlar dikkatinizi hemen çekiyor ve çok özel bir izlenim yaratıyor. Şu anda, Japonya, geleneklerini dindar bir şekilde onurlandıran ve aynı zamanda teknolojilerin gelişmesinde ve genel ekonomik duruşunda muazzam bir başarı elde eden dünyadaki tek imparatorluktur. Japon Ulusal Karakterinin eşsizliği hakkında daha fazla şey biliyorsa, geçmişin mirasını ve geleceğin kazanımlarının bu kadar müthiş bir kombinasyonunun nedenleri daha belirgin hale geliyor.</p>
+                <p>Japon kültürü kolektivizme odaklıdır. Japonlar, aile üyelerine, iş arkadaşlarına ve üyesi oldukları diğer sosyal gruplara karşı yakın bir his veriyorlar. Hiyerarşi gruplar halinde hakimdir. Herkes onun yerini tutar ve üst düzeylerle ilgili olarak itaatini gözlemler.</p>
+            </div>
+            <div class="orta sutun">
+                <div class="slidercontainer">
+                    <div class="showSlide fade">
+                        <img src="3.jpg" />
+                        <div class="content" align="center"></div>
+                    </div>
+                    <div class="showSlide fade">
+                        <img src="4.jpg" />
+                        <div class="content" align="center"></div>
+                    </div>
+
+                    <div class="showSlide fade">
+                        <img src="1.jpg" />
+                        <div class="content" align="center"></div>
+                    </div>
+                    <div class="showSlide fade">
+                        <img src="2.jpg" />
+                        <div class="content" align="center"></div>
+                    </div>
+                    <!-- Navigation arrows -->
+                    <a class="left" onclick="nextSlide(-1)">❮</a>
+                    <a class="right" onclick="nextSlide(1)" align="right">❯</a>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="alt" align="center">
+            <div style="float:left"><b><i>Bilişim Sistemleri Mühendisliği</i></b></div>
+            <div style="float:right"><b>Esra Aksu | B191200370</b></div>
+
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript">
+
+        var slide_index = 1;
+        displaySlides(slide_index);
+        function nextSlide(n) {
+        displaySlides(slide_index += n);
+        }
+        function currentSlide(n) {
+        displaySlides(slide_index = n);
+        }
+        function displaySlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("showSlide");
+        if (n > slides.length) { slide_index = 1 }
+        if (n < 1) { slide_index = slides.length }
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        slides[slide_index - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
